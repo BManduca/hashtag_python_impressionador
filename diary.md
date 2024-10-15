@@ -57,7 +57,7 @@
                             "--load-plugins=pylint.extensions.docparams", # Load an extension
                         ]
 
-## Padrões de commits
+## [Padrões de commits](https://github.com/iuricode/padroes-de-commits)
 -
 - A título de curiosidade e organização, o commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -94,3 +94,10 @@
     - print(1 + 2 * 2), resultaria em 5, pois, seria resolvido primeiro a multiplicação para depois a soma.
     - se caso, fosse necessário realizar a soma antes, seria preciso colocar um parênteses envolvendo a soma, como da seguinte forma:
         - print((1+2) * 2)
+
+## Tipos de Varíaveis em Python
+- Qualquer coisa em python pode ser uma varíavel
+- As varíaveis são objetos
+    - Varíaveis de tipos diferentes, vão ter métodos diferentes.
+- Não pode ou não é recomendado ficar mudando o tipo da varíavel o tempo todo
+

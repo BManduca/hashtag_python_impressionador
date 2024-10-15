@@ -71,7 +71,7 @@ def message_centralized(msg, wid: int):
 
     return text
 
-# imprimindo a mensagem
+# imprimindo a mensagem centralizada
 def print_text_centralized(msg, cor=0):
     width_terminal = os.get_terminal_size().columns
     space = (width_terminal - len(msg)) // 2
