@@ -261,3 +261,38 @@ com acento e ç são considerados letras para essa função.
         print(texto.upper())
 
         Resultado = 'BEB1234'
+
+
+## Listas em Python
+- são mutáveis.
+
+### Estrutura:
+- lista = [valor, valor, valor, ....]
+
+    - Lista é um dos objetos mais importantes de Python
+    - Quando importamos uma base de dados para o Python, normalmente ela é lida como uma 'lista' ou como alguma 'variação de lista'
+    - Lista em Python foram feitas para serem homogêneas, apesar de aceitarem valores heterogêneos
+
+### Juntando listas
+- Para juntar duas listas existem duas forma de fazer esse processo:
+    1. Método extend()
+        - No método extend você vai estar editando a sua lista original
+    2. Somando as duas listas
+        - Normalmente quando é somado duas listas, vai ser criado uma nova lista para isso.
+
+## Strings em Python
+- Todas as strings por debaixo dos panos são consideradas listas de caracteres, porém, a única diferença para uma lista mesmo, é que as strings não são mutáveis, ou seja, não podem ser alteradas.
+
+    >
+        email = brunnomanducarfe@gmail.com
+        # incorreto
+        email[5] = 'a'
+        # correto
+        email = email.replace('o', 'a')
+        print(email)
+
+        Resposta: brunnamanducarfe@gmail.cam
+
+
+
+    
