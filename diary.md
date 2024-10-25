@@ -293,6 +293,11 @@ com acento e ç são considerados letras para essa função.
 
         Resposta: brunnamanducarfe@gmail.cam
 
+## Enumerate
+- O enumerate permite que você percorra uma lista e ao mesmo tempo tenha em uma variável o índice daquele item.
 
+    >
+        for i, item in enumerate(lista):
+            restante do codigo...
 
     
