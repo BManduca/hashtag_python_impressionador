@@ -300,4 +300,38 @@ com acento e ç são considerados letras para essa função.
         for i, item in enumerate(lista):
             restante do codigo...
 
+
+## While
+
+- O uso do while se define em repetir um código de forma indeterminada até uma condição se tornar verdadeira/falsa
+- A lógica é: enquanto a condição for verdadeira, o while executa o código. Assim que ele terminar de ser verdadeira, o código 'sai' do while.
+
+    >
+        while condicao:
+            repete o codigo
+
+## Tuplas
+- estrutura: tupla = (valor, valor, valor, ...)
+- Diferença: parece uma lista mas é imutável.
+- Vantagens:
+    1. Mais eficiente (em termos de performance)
+    2. Protege a base de dados (por ser imutável)
+    3. Muito usado para dados heterogêneos
+
+- unpacking: 
+    - ação de desmembrar os itens de uma tupla
+    - podemos fazer da seguinte forma:
+        >
+            vendas = ('Lira', '25/08/2020', '15/02/1994', 2000, 'Estagiário')
+
+            nome, data_contratacao, data_nascimento, salario, cargo = vendas
+
+- enumerate:
+    - Cria uma tupla, da sguinte forma:
+        >
+            for i, venda in enumerate(vendas):
+                print(f'{funcionarios[i]} vendeu {venda} unidades')
+
+
+
     
