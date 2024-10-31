@@ -333,5 +333,31 @@ com acento e ç são considerados letras para essa função.
                 print(f'{funcionarios[i]} vendeu {venda} unidades')
 
 
+## Dicionários
+
+- Estrutura
+
+    >
+        dicionario = {chave: valor, chave: valor, chave: valor, chave: valor, ...}
+
+
+- **Vantagens e desvantagens**
+    1. Não devem ser usados para pegar itens em uma determinada ordem
+    2. Podem ter valores heterogêneos (vários tipos de valores dentro de um mesmo dicionário: inteiros, strings, listas, etc.)
+    3. Chaves são únicas obrigatoriamente
+    4. Mais intuitivos de trabalhar.
+
+- **Método keys()**
+    - 'Pega' todas as chaves do dicionário
+    - porém ao aplicar o método keys, nos criamos uma dict_keys
+    - para 'transformar' o resultado em uma lista realmente:
+        - isto serve tanto para o método keys quanto para o values
+        >
+            lista_chaves = list(dicionario.keys())
+
+- **Método values()**
+    - 'Pega' todos os valores do dicionário
+    - porém ao aplicar o método values, nos criamos uma dict_values
+
 
     
