@@ -20,7 +20,9 @@ matplotlib-inline==0.1.7
 mccabe==0.7.0
 nest-asyncio==1.6.0
 nodeenv==1.9.1
+numpy==2.1.2
 packaging==24.1
+pandas==2.2.3
 parso==0.8.4
 pexpect==4.9.0
 platformdirs==4.3.6
@@ -32,6 +34,7 @@ pure_eval==0.2.3
 Pygments==2.18.0
 pylint==3.3.1
 python-dateutil==2.9.0.post0
+pytz==2024.2
 PyYAML==6.0.2
 pyzmq==26.2.0
 six==1.16.0
@@ -39,5 +42,6 @@ stack-data==0.6.3
 tomlkit==0.13.2
 tornado==6.4.1
 traitlets==5.14.3
+tzdata==2024.2
 virtualenv==20.26.6
 wcwidth==0.2.13
