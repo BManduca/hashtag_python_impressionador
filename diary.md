@@ -360,4 +360,12 @@ com acento e ç são considerados letras para essa função.
     - porém ao aplicar o método values, nos criamos uma dict_values
 
 
-    
+## Iterables
+- O que é?
+    - Explicação não programadora: Um iterable é uma estrutura que armazena dados que podem ser 'iterada', ou seja, que você pode fazer um loop com um for dentro dela e ir passando de item a item. É como se fosse um tipo de lista de coisas que você pode ir olhando cada um dos elementos dentro dela.
+
+## Set
+- Basicamente é uma lista de informações, em que essas informações não tem uma ordem definida, ou seja, elas podem vir em qualquer ordem.
+- Vantagem: Não pode ter valores duplicados
+    >
+        meu_set = {valor, valor, valor, ....}
