@@ -369,3 +369,40 @@ com acento e ç são considerados letras para essa função.
 - Vantagem: Não pode ter valores duplicados
     >
         meu_set = {valor, valor, valor, ....}
+
+## Functions
+- As functions são blocos de código que servem para um 1 único propósito: fazer uma ação específica.
+
+- Estrutura básica
+    >
+        def nome_funcao():
+            faca alguma coisa
+            faca outra coisa
+            return valor_final
+
+- Formas de passar um argumento para uma function:
+    1. Em ordem -> positional argument
+        >
+            def program(arg1, arg2):
+                seu codigo...
+
+            program(cor1, cor2)
+        
+        - desta forma, o arg1 automaticamente será a cor1 e o arg2 será a cor2
+    
+    2. Com o nome do argumento (keyword argument)
+        >
+            def verificar_categoria(bebida, cod_categoria):
+                bebida = bebida.upper()
+                if cod_categoria in bebida:
+                    return True
+                else:
+                    return False
+
+            produtos = ['CAR46275','TFA23962','TFA64715','TFA69555','TFA56743','BSA45510','TFA44968','CAR75448','CAR23596','CAR13490','BEB21365','BEB31623','BSA62419','BEB73344','TFA20079','BEB80694','BSA11769','BEB19495','TFA14792','TFA78043','BSA33484','BEB97471','BEB62362','TFA27311','TFA17715','BEB85146','BEB48898','BEB79496','CAR38417','TFA19947','TFA58799','CAR94811','BSA59251','BEB15385','BEB24213','BEB56262','BSA96915','CAR53454','BEB75073']
+
+            for produto in produtos:
+                if verificar_categoria(cod_categoria = 'BEB', bebida = produto):
+                    print('Enviar {} para setor de bebidas alcóolicas'.format(produto))
+                elif verificar_categoria(produto, 'BSA'):
+                    print('Enviar {} para setor de bebidas não alcóolicas'.format(produto))
