@@ -406,3 +406,59 @@ com acento e ç são considerados letras para essa função.
                     print('Enviar {} para setor de bebidas alcóolicas'.format(produto))
                 elif verificar_categoria(produto, 'BSA'):
                     print('Enviar {} para setor de bebidas não alcóolicas'.format(produto))
+
+## Docstrings e Annotations
+- Quando criamos uma função, normalmente não seremos as únicas pessoas a usarem essa função e também pode ser que a gente precise usar a mesma função semanas, meses ou até anos depois da sua criação.
+- Por isso é importante usarmos DOcStrings e Annotations:
+    1. Docstring: Diz o que a função faz, quais os valores ela tem como argumento e o que significa cada valor.
+    2. Annotation: Diz o que devem ser os argumentos e o que a função retorna.
+- Em muitas empresas, o time de tecnologia vat ter um padrão que você deve seguir para isso, caso não tenha, abaixo tem um padrão que pode ser utilizado
+
+- ### Docstring
+    >
+        def minha_soma(num1, num2, num3):
+            ''' 
+                Faz a soma de 3 número inteiros e devolve como resposa um número inteiro
+
+                Parameters:
+                    num1 (int): primeiro número a ser somado
+                    num2 (int): segundo número a ser somado
+                    num3 (int): terceiro número a ser somado
+
+                Returns:
+                    soma (int): o valor da soma dos 3 números dados como argumento.
+            '''
+
+            return num1 + num2 + num3
+
+- ### Annotation
+    >
+        def minha_soma(num1: int, num2: int, num3: int) -> int:
+            return num1 + num2 + num3
+
+## Quantidade indefinida de argumentos
+- Utilidade: quando você quer permitir uma quantidade indefinida de argumentos, usa o * para isso
+- Estrutura:
+    >
+        # *args para positional arguments -> argumentos que vêm em formato de tupla
+        def minha_soma(*numeros):
+            print(numeros)
+            soma = 0
+            for numero in numeros:
+                soma += numero
+            return soma
+
+    >
+        # **kwargs para keywords arguments -> argumentos que vem em formato de dicionário
+        def minha_funcao(**kwargs):
+            ...
+
+
+## Ordem de argumentos
+- Estrutura:
+    1. Sempre os positional arguments vêm antes e depois os keywords arguments
+    2. Sempre os argumentos individuais vem antes e depois os múltiplos
+
+    >
+        def minha_funcao(arg1, arg2, arg3, *args, k = kwarg1, k2 = kwarg2, k3 = kwarg3, **kwargs)
+            ...
