@@ -462,3 +462,14 @@ com acento e ç são considerados letras para essa função.
     >
         def minha_funcao(arg1, arg2, arg3, *args, k = kwarg1, k2 = kwarg2, k3 = kwarg3, **kwargs)
             ...
+
+## List Comprehensions
+- É uma forma de iterar pelos elementos das listas de uma maneira 'mais direta', com mais 'cara de Python'
+- Em resumo: É como se você fizesse um for em uma linha de código.
+
+- ### Observação importante
+    - Você não precisa de List comprehension para programar, todos os problemas resolvidos através do uso de List comprehension pode ser realizado com as outras formas já aprendidas no python
+    - Não será possível sair de uma hora para outra fazendo tudo de list comprehension ao invés de for, porque realmente é mais confuso
+    - O objetivo qual é:
+        1. Saber ler e entender o que está acontecendo quando ver list comprehension(principal)
+        2. A medida do tempo que você vai se acostumando com isso, vendo mais, usando mais e vai fazer naturalmente quando precisar.
