@@ -153,6 +153,17 @@
         b r u n n o m a n d  u  c  a  r  f  e  @  g  m  a  i  l  .  c  o  m
         0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
+### rfind()
+- Retorna o índice da última ocorrência da substring.
+- Útil quando você precisa localizar a última ocorrência de uma substring ou quer buscar de trás para frente em uma string, especialmente ao lidar com textos longos ou buscar delimitadores em uma posição específica.
+- Sintaxe:
+    >
+        str.rfind(sub[, start[, end]])
+
+    - sub: a substring que você deseja encontrar
+    - start(opcional): A posição inicial para começar a busca
+    - end(opcional): A posição final até onde a busca deve ocorrer (exclusivo).
+
 
 ### format()
 - Formata uma string de acordo com os valores passados.
