@@ -484,3 +484,35 @@ com acento e ç são considerados letras para essa função.
     - O objetivo qual é:
         1. Saber ler e entender o que está acontecendo quando ver list comprehension(principal)
         2. A medida do tempo que você vai se acostumando com isso, vendo mais, usando mais e vai fazer naturalmente quando precisar.
+
+## Orientação a Objetos e Porque isso importa
+
+- ### Introdução a Orientação a Objetos
+    
+    - Regras gerais:
+        - Tudo no python é um objeto
+            1. String é objeto
+            2. Lista é objeto
+            3. Dicionários são objetos
+        - Cada objeto possui vários métodos
+
+    - Qual a grande vantagem de saber a orientação a objetos?
+        - É possível importar importar módulos novos
+        - Então tem muitas coisas que já estão prontas no Python que a gente não precisa programar do zero, iriámos simplesmente sair utilizando.
+        - Ao importarmos, o que realmente estaremos fazendo é importar 1 ou mais objetos que tem vários métodos já prontos para serem utilizados.
+
+- ### Módulos
+    - Importância:
+        - Já tem muita coisa pronta, então você não precisa criar do zero
+        - Se você souber usar Módulos e como usar um módulo novo, você vai conseguir fazer praticamente tudo no python
+
+    - Importando módulos
+        - import Nome_modulo
+        - import nome_modulo as nome_abreviado
+        
+    - Importando partes/funções especificas dos módulos
+        - from modulo import funcao1, funcao2
+    
+    - Importando todas as funções
+        - from modulo import *
+
