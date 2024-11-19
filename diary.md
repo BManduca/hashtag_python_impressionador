@@ -516,3 +516,7 @@ com acento e ç são considerados letras para essa função.
     - Importando todas as funções
         - from modulo import *
 
+- ### Módulo datetime()
+- Módulo que fornece classes para manipulação de datas e horas
+
+
