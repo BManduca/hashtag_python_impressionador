@@ -519,4 +519,17 @@ com acento e ç são considerados letras para essa função.
 - ### Módulo datetime()
 - Módulo que fornece classes para manipulação de datas e horas
 
+- ### Módulo collections
+- Módulo collections implementa tipos de dados de contêineres especializados que fornecem alternativas aos contêineres embutidos do Python: dict, list, set e tuple
+    - função Counter()
+        - Subclasse de dict para contar objetos hasheáveis
+        - um objeto é hasheável se tem um valor que nunca muda durante seu ciclo de vida(precisa ter
+        um método __hash__()) e pode ser comparado com outros objetos(precisa ter um método __eq__()). Objetos hasháveis
+        que são comparados como iguais devem er o mesmo valor de hash.
+        - A hasheabilidade faz com que o objeto possa ser usado como uma chave de dicionário e como um membro de conjunto, pois estas estruturas de dados utilizam os valores de hash internamente.
+
+- ### Módulo keyboard
+    - Módulo que assume o controle do teclado em si
+    - Módulo bem interessante para automações
+    
 
