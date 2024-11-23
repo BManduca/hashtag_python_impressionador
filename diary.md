@@ -531,5 +531,23 @@ com acento e ç são considerados letras para essa função.
 - ### Módulo keyboard
     - Módulo que assume o controle do teclado em si
     - Módulo bem interessante para automações
+
+- ### Módulo numpy
+    - NumPy -> significa Numerical Python
+    - É uma poderosa biblioteca da linguagem de programação python, que consiste em objetos chamados de arrays(matrizes),
+    que são multidimensionais.
+    - Além disso, essa biblioteca vem com uma coleção de rotinas para processar esses arrays.
+    - NumPy forence um grande conjunto de funções e opreações de biblioteca que ajudam os programadores a executar facilmente cálculos númericos. Esses tipos de cálculos númericos são amplamente utilizados em tarefas como:
+        - Modelos de Machine Lerning
+        - Processamento de Imagem e Computação Gráfica
+        - Tarefas matemáticas
+    - Bastante voltado para quem trabalha com gráficos, com dados...
+    - Estatísticas, previsões...
+
+- ### Módulo matplotlib
+    - pyplot.plot
+        - [Documentação pyplot lib](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html)
     
+    - pyplot.figure
+        - [Documentação pyplot figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure)
 
