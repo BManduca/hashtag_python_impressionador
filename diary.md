@@ -551,3 +551,8 @@ com acento e ç são considerados letras para essa função.
     - pyplot.figure
         - [Documentação pyplot figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure)
 
+
+- ### Lambda expressions
+    - São funções anônimas (sem realmente tem um nome) e que tem uma única linha de código e são atribuídas a uma variável, como se a variável virasse uma função
+    - Normalmente são usadas para fazer uma única ação, mas em Python usamos principalmente dentro de métodos como argumento, para não precisarmos criar uma função só para isso.
+    
