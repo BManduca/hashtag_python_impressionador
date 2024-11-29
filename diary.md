@@ -556,3 +556,42 @@ com acento e ç são considerados letras para essa função.
     - São funções anônimas (sem realmente tem um nome) e que tem uma única linha de código e são atribuídas a uma variável, como se a variável virasse uma função
     - Normalmente são usadas para fazer uma única ação, mas em Python usamos principalmente dentro de métodos como argumento, para não precisarmos criar uma função só para isso.
     
+
+- ### NumPy()
+- Biblioteca bastante relevante para quem vai trabalhar com dados
+- É uma biblioteca que fornece um objeto array multidimensional, vários objetos derivados (como arrays mascarados e matrizes) e uma variedade de rotinas para operações rápidas em arrays, incluindo matemática, lógica, manipulação de formas, calificação, seleção, I/O, 'discrete Fourier transforms', álgebra linear básica, operações estatísticas básicas, simulação aleatória e muito mais.
+- NumPy é usado no núcleo de muitos pacotes populares no mundo de Data Science e machine learning.
+- instalação: !pip3 install numpy
+- estrutura básica do NumPy é o array
+
+
+- ### Diferenças entre listas e arrays:
+    - **Tipos de dados**: As listas podem armazenar elementos de tipos diferentes ao mesmo tempo, enquanto os arrays armazenam elementos do mesmo tipo
+    - **Operações matemáticas**: Você porde realizar operações matemáticas em todos os elementos de um array de uma vez, o que não é possível com listas.
+    - **Desempenho**: Arrays são mais eficientes em termos de memória e desempenho do que listas quando se trabalha com grandes quantidades de dados númericos.
+    - **Funcionalidades**: NumPy arrays vêm com várias funções integradas para operações matemáticas e ciêntificas, como média, soma, multiplicação de matrizes, etc., que não estão disponíveis com listas.
+
+- ### Funções presentes no NumPy
+    - np.sum() -> Somar todos os elementos de um array.
+    - np.mean() -> Utilizada para calcular a média de um array.
+    - np.max() -> Utilizado para encontrar o valor máximo em um array.
+    - np.min() -> Utilizado para encontrar o valor mínimo em um array.
+    - np.sort() -> Utilizado para ordenar os elementos de um array.
+    - np.dot() -> Utilizado para calcular o produto escalar de dois arrays. Exemplo: Em uma empresa de varejo, você pode calcular o valor total de vendas, dado o número de cada produto vendido e o preço unitário de cada produto.
+
+- ### Números aleatórios e estatística básica
+    - Objeto gerador: para criar um objeto gerador, é utilizado por convenção, a abreviação rng(random generator)
+        - rng = np.random.default_rng()
+    - O número gerado pelo random, sempre será entre 0 e 1, ou seja, um número float
+        - Para que o valor random por exemplo seja entre 0 e 10, basta multiplicar o rng.random() por 10
+    - Gerando um array de números aleatorios
+        - array_aleatorio = rng.random(3)
+    - Gerando dados aleátorios
+        - Criamos primeiramente o objeto gerador -> rng = np.random.default_rng()
+        - E como parâmetro para o objeto gerador, passamos o seed, que é usado para inicializar o gerador de números pseudoaleatórios
+            - rng = np.random.default_rng(seed=0)
+        - Ele define o estado inicial do gerador, garantindo que os números aleatórios gerados sejam reproduzíveis.
+        - após definir o valor do seed, os números aleátorios gerados se tornaram meio que fixos, para facilitar a reprodução 
+        - Muitos pessoas utilizam o valor 42 para o seed e isso vem do livro mochileiro das galáxias, aonde em uma parte do livro foi criado um super computador e o mesmo disse que a resposta da vida/universo é 42
+
+    
