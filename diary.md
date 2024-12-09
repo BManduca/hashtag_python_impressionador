@@ -595,3 +595,11 @@ com acento e ç são considerados letras para essa função.
         - Muitos pessoas utilizam o valor 42 para o seed e isso vem do livro mochileiro das galáxias, aonde em uma parte do livro foi criado um super computador e o mesmo disse que a resposta da vida/universo é 42
 
     
+- ### Desvio padrão
+    - É uma medida estatística que quantifica a quantidade de variação ou dispersão dos valores de um conjunto de dados.
+    - Ele indica o quanto os valores se afastam da média (ou média aritmética) desse conjunto.
+
+
+- ### Função np.reshape()
+    - re -> alterar | shape -> forma
+    - É usada para alterar a forma de um array.
