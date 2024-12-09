@@ -555,6 +555,7 @@ com acento e ç são considerados letras para essa função.
 - ### Lambda expressions
     - São funções anônimas (sem realmente tem um nome) e que tem uma única linha de código e são atribuídas a uma variável, como se a variável virasse uma função
     - Normalmente são usadas para fazer uma única ação, mas em Python usamos principalmente dentro de métodos como argumento, para não precisarmos criar uma função só para isso.
+<<<<<<< HEAD
     
 
 - ### NumPy()
@@ -603,3 +604,6 @@ com acento e ç são considerados letras para essa função.
 - ### Função np.reshape()
     - re -> alterar | shape -> forma
     - É usada para alterar a forma de um array.
+=======
+    
+>>>>>>> parent of c1799f9 (feat: started the module about numpy, applied studies based on theory and applied in solving exercises involving statistical methods)
