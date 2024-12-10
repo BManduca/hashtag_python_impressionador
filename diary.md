@@ -557,7 +557,7 @@ com acento e ç são considerados letras para essa função.
     - Normalmente são usadas para fazer uma única ação, mas em Python usamos principalmente dentro de métodos como argumento, para não precisarmos criar uma função só para isso.
     
 
-- ### NumPy()
+- ## NumPy()
 - Biblioteca bastante relevante para quem vai trabalhar com dados
 - É uma biblioteca que fornece um objeto array multidimensional, vários objetos derivados (como arrays mascarados e matrizes) e uma variedade de rotinas para operações rápidas em arrays, incluindo matemática, lógica, manipulação de formas, calificação, seleção, I/O, 'discrete Fourier transforms', álgebra linear básica, operações estatísticas básicas, simulação aleatória e muito mais.
 - NumPy é usado no núcleo de muitos pacotes populares no mundo de Data Science e machine learning.
@@ -603,3 +603,23 @@ com acento e ç são considerados letras para essa função.
 - ### Função np.reshape()
     - re -> alterar | shape -> forma
     - É usada para alterar a forma de um array.
+
+- ## Pandas
+    - Biblioteca/módulo
+    - É a ferramenta número 1, usado para análise de dados
+        - Seja para ler um arquivo excel
+        - Seja para ler uma base de dados(csv)
+    - Melhor biblioteca/módulo para ttabalhar com quantidades enormes de informações
+    - Uma mistura de listas e dicionários de forma muito eficiente
+
+
+    - ### DataFrames
+        - Objeto do pandas, que essencialmente é uma tabela
+        - As colunas funcionam "como dicionários"
+            - ao passarmos nome_dataframe['nome_coluna'] -> estaremos acessando os valores presente em nome_coluna
+        - As linhas funcionam "como listas"
+            - para ver os registros de maneira completa posso fazer da seguinte forma: nome_dataframe[:n]
+                - aonde o n seria um número especifico de linhas
+            - caso seja colocado nome_dataframe[0], ocorrerá um erro, pois é preciso seguir o padrão nome_dataframe[:n]
+        - método merge
+            - método para mesclar bases
