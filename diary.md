@@ -623,3 +623,9 @@ com acento e ç são considerados letras para essa função.
             - caso seja colocado nome_dataframe[0], ocorrerá um erro, pois é preciso seguir o padrão nome_dataframe[:n]
         - método merge
             - método para mesclar bases
+
+
+    - value_counts()
+        - Contar quantas linhas determinado elemento aparece
+
+    - 
