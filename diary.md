@@ -628,4 +628,4 @@ com acento e ç são considerados letras para essa função.
     - value_counts()
         - Contar quantas linhas determinado elemento aparece
 
-    - 
+    - Obs.: para realizar os exercícios da aula 23 do módulo 22, precisa baixar o arquivo: https://drive.google.com/file/d/1OhNIiehscfd3f-AD1IVkAJ73zGcdOP3b/view
