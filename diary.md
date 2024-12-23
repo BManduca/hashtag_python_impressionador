@@ -629,3 +629,7 @@ com acento e ç são considerados letras para essa função.
         - Contar quantas linhas determinado elemento aparece
 
     - Obs.: para realizar os exercícios da aula 23 do módulo 22, precisa baixar o arquivo: https://drive.google.com/file/d/1OhNIiehscfd3f-AD1IVkAJ73zGcdOP3b/view
+
+    - ### [to_datetime](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html)
+        - função que converte uma string de data em um objeto datetime
+        - [Formatação](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior) de código que pode auxiliar no format do to_datetime
