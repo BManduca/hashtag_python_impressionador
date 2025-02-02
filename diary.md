@@ -633,3 +633,8 @@ com acento e ç são considerados letras para essa função.
     - ### [to_datetime](https://pandas.pydata.org/docs/reference/api/pandas.to_datetime.html)
         - função que converte uma string de data em um objeto datetime
         - [Formatação](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior) de código que pode auxiliar no format do to_datetime
+
+## Seaborn
+- Biblioteca gráfica de visualização de dados
+- Construída em cima do matplotlib
+- Este módulo vem para agregar várias ferramentas relacionadas a estatísticas e análise de dados, em cima de dataframes voltados para o pandas.
