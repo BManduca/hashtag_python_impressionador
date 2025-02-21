@@ -638,3 +638,20 @@ com acento e ç são considerados letras para essa função.
 - Biblioteca gráfica de visualização de dados
 - Construída em cima do matplotlib
 - Este módulo vem para agregar várias ferramentas relacionadas a estatísticas e análise de dados, em cima de dataframes voltados para o pandas.
+
+## python-docx
+- Pacote para realizar integração do python com word
+
+## PyPDF2
+- Biblioteca(ferramenta) que essencialmente manipula todo o PDF
+- Funcionalidades:
+    - Mesclar dois PDFs
+    - Separar vários arquivos em PDFs
+    - Pegar um texto específico do PDF
+    - Pegar uma página e colocar no meio das duas
+    - Inverter a direção da página
+
+## Tabula
+- Biblioteca voltada para trabalhar com tabelas
+- Funcionalidades:
+    - Extrair tabelas do PDF e transformar as mesmas em Dataframes do python
