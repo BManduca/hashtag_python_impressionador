@@ -655,3 +655,6 @@ com acento e ç são considerados letras para essa função.
 - Biblioteca voltada para trabalhar com tabelas
 - Funcionalidades:
     - Extrair tabelas do PDF e transformar as mesmas em Dataframes do python
+- O tabula.read_pdf("endereço_do_pdf") => retorna uma lista de tabelas
+- O tabula consegue ler mais de uma tabela por página
+- O Padrão do tabula é retornar uma lista de tabelas
