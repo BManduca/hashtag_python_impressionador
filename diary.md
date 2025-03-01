@@ -658,3 +658,60 @@ com acento e ç são considerados letras para essa função.
 - O tabula.read_pdf("endereço_do_pdf") => retorna uma lista de tabelas
 - O tabula consegue ler mais de uma tabela por página
 - O Padrão do tabula é retornar uma lista de tabelas
+
+
+## Python e Arquivos do Computador
+
+- Os módulos os e pathlib são uns dos melhores módulos/bibliotecas para controlar as pastas do seu computador.
+- O pathlib costuma funcionar muito bem independente do sistema operacional que está sendo utilizado.
+
+### Acessando local/diretório de arquivos
+
+```
+
+from pathlib import Path
+
+# acessando diretório completo através do comando Path.cwd()
+# print(Path.cwd())
+
+# existem duas maneiras de 'pegar' o caminho especifico/completo de uma pasta/diretorio
+# 1˚ -> definindo o caminho de uma pasta específica
+caminho_arquivos_lojas = Path('/Users/brunnomanduca/Documents/Repositórios/MyGithub/hashtag_python_impressionador/módulos/módulo26/Modulo26 Aula 01/Arquivos_lojas')
+
+# 2˚ -> utilizar o caminho padrão, que pode ser visto pelo comando Path.cwd()
+# e passar para a função Path(), somente o caminho relativo do diretorio
+caminho_arquivos_lojas2 = Path('Arquivos_Lojas/')
+
+# listando todos os arquivos de uma pasta
+arquivos = caminho_arquivos_lojas2.iterdir()
+
+for arquivo in arquivos:
+    print(arquivo)
+
+```
+
+### Verificando se um determinado arquivo existe no diretório
+
+- **existem duas formas para verificar se um arquivo existe**
+
+- #### 1˚ construindo um if para realizar a verificação
+
+```
+
+if Path('Arquivos_Lojas/202002_Amazonas Shopping_AM.csv').exists():
+    print('Existe!')
+
+```
+
+- #### 2˚ utilizando um caminho que ja foi definido anteriormente e juntando com o Path do arquivo em si
+```
+caminho_arquivos_lojas2 = Path('Arquivos_Lojas/')
+
+if (caminho_arquivos_lojas2 / Path('202002_Amazonas Shopping_AM.csv')).exists():
+    print("Existe!")
+
+```
+
+
+### Módulo Shutil
+- Módulo voltado para ações de manipulações de arquivos, como copiar, colar, mover arquivos de lugares..
