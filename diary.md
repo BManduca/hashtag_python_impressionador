@@ -715,3 +715,67 @@ if (caminho_arquivos_lojas2 / Path('202002_Amazonas Shopping_AM.csv')).exists():
 
 ### Módulo Shutil
 - Módulo voltado para ações de manipulações de arquivos, como copiar, colar, mover arquivos de lugares..
+
+
+## Integração Python - E-mail
+
+- SMTP
+    - Protocolo que os e-mails utilizam de mensagem para fazer envio e recebimento de mensagem, sejam, 
+    mensagens com cópia, cópia oculta, anexo, imagem e etc.
+    - Para envio de e-mails em massa, geralmente são feitos apartir de serviços terceirizados, como Sendgrid da Twillio,
+    o Postmark e outros.
+
+
+- Criando uma mensagem de email
+```
+import email.message
+
+# email.message -> biblioteca email é a que permite construir uma mensagem
+de email
+msg = email.message.Message()
+
+```
+
+- Efetuando [conexão com servidor](https://kinsta.com/pt/blog/servidor-smtp-gmail/)
+    - conexão é feita da seguinte forma:
+        - servidor = smtplib.SMTP("endereço_servidor", "porta")
+            - endereco_servidor -> link de endereco do servidor
+            - porta -> porta usada para fazer envio do e-mail
+        - servidor.starttls()
+            - starttls -> formato de criptografia que os emails usam para enviar mensagem entre si
+        - servidor.login(user_login, email_senha)
+            - user_login -> usuário para acessar o email
+            - email_senha -> senha do email
+        - servidor.send_message(msg)
+            - send_message() -> realizar propriamente o envio da mensagem para os emails selecionados
+        - servidor.quit()
+            - fechar conexão
+
+## Lendo/Extraindo informações de um email
+
+- Protocolo IMAP
+    - para utilizar basta instalar -> pip3 install imap-tools
+
+- efetuando conexao com caixa de entrada do email, através do login
+    - Utilizamos a função MailBox que é importando da biblioteca imap_tools:
+        ```
+            meu_email = MailBox("imap.gmail.com").login(email_usuario, email_senha)
+        ```
+    - Para pegar uma lista de emails, podemos fazer através do comando fetch, da seguinte forma:
+        ```
+            lista_emails = meu_email.fetch(AND(from_="email_emissor@gmail.com", to="email_destinatario@gmail.com"))
+        ```
+        - no fetch, iremos passar o parâmetro AND, que também é importando da biblioteca imap_tools e em conjunto com 
+        esse parâmetro, são passados alguns critérios de seleção. Para um melhor conhecimento de todos os critérios
+        que podem ser utilizados, basta acessar a página da biblioteca [imap_tools](https://pypi.org/project/imap-tools/#search-criteria)
+        
+
+## Sendgrid Twillio
+- O Sendgrid é um serviço de envio de e-mails baseado na nuvem, utilizado para enviar e-mails transacionais e de marketing
+em grande escala. Ele fornece APIs para integração com diversas aplicações, permitindo o envio seguro e eficiente de 
+e-mails.
+- Em python existem duas formas de utilizar o mesmo:
+    ```
+        # - Através de Requisições (requests, get, post, patch, delete)
+        # - Utilizando a Biblioteca (sendgrid)
+    ```
