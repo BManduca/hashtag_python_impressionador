@@ -779,3 +779,52 @@ e-mails.
         # - Através de Requisições (requests, get, post, patch, delete)
         # - Utilizando a Biblioteca (sendgrid)
     ```
+
+## SQL
+- É uma liguagem usada para criar e interagir com banco de dados.
+- Efetuar criação de banco de dados e ler/consultar banco de dados
+
+- ### Biblioteca pyodbc
+    - Permite que o python seja integrado com qualquer tipo de banco de dados SQL, ou seja, SQL Server, MySQL, Oracle, Access, IBM, Postgres SQL e etc.
+    - CRUD
+        - Create
+        - Read
+        - Update
+        - Delete
+    - instalação(MacOS Chip M1)
+    ```
+        brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release
+        brew update
+        brew upgrade
+        HOMEBREW_ACCEPT_EULA=Y brew install msodbcsql18 mssql-tools18
+
+        pip3 install --pre --no-binary :all: pyodbc
+    ```
+
+- ### DB Browser
+    - Gerenciador de Banco de dados
+    - Instalação Mac (opcional)
+        - brew install db-browser-for-sqlite
+        
+- ### Aviso sobre conexões com Banco de Dados
+    - Após finalizar as edições com banco de dados, no final do código, é necessário fechar o cursor e a conexão com o banco de dados, ou seja, finalizar a integração feita entre o Python e o SQL.
+        ```
+            cursor.close()
+            conexao.close()
+        ```
+    - O Problema: Ao rodar o código sem fechar o cursor e a conexao, o mesmo ficará eternamente rodando
+
+- ### Efetuando conexão via biblioteca do sqlite3 no Mac Chip M1
+    - para a situação tratada acima, foi aplicada a devida solução:
+        ```
+            import sqlite3
+
+            conexao = sqlite3.connect('NomedoDatabase.sqlite')
+            print('Conexão efetuada com sucesso.')
+
+            cursor = conexao.cursor()
+
+            # fechando o cursor e a conexao com o Database ao final do código
+            cursor.close()
+            conexao.close()
+        ```

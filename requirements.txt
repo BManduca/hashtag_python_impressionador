@@ -210,6 +210,7 @@ pyobjc-framework-VideoToolbox==10.3.1
 pyobjc-framework-Virtualization==10.3.1
 pyobjc-framework-Vision==10.3.1
 pyobjc-framework-WebKit==10.3.1
+pyodbc==5.2.0
 pyparsing==3.2.0
 PyPDF2==3.0.1
 pyperclip==1.9.0
