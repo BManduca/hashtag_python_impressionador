@@ -14,6 +14,7 @@ disable=
       C0303, # Trailing whitespace
       E0015, # unrecognized-option
       R0903, # Too few public methods
+      I1101, #c-extension-no-member
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists

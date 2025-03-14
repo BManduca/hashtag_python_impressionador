@@ -2,7 +2,7 @@ repos:
   - repo: local
     hooks:
       - id: pylint
-        name: pylint
+        name: Run Pylint
         entry: pylint
         language: system
         types: [python]
