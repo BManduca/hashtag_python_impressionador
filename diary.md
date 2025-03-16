@@ -828,3 +828,51 @@ e-mails.
             cursor.close()
             conexao.close()
         ```
+
+## Pre-commit
+- O pre-commit é uma ferramenta essencial para garantir a qualidade do código antes que ele seja enviado para o repositório (antes do commit).
+- Ele automatiza a execução de ferramentas como black, flake8, isort, mypy, entre outras.
+
+- Instalação
+    - pip3 install pre-commit
+
+- Criando arquivo de configuração pylintrc
+    - pylint --generate-rcfile > pylintrc
+
+- Criar o arquivo .pre-commit-config.yaml
+```
+    repos:
+  - repo: local
+    hooks:
+      - id: pylint
+        name: Run Pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn", # Only display messages
+            "-sn", # Don't display the score
+            "--rcfile=.pylintrc", # Link to your config file
+            "--load-plugins=pylint.extensions.docparams", # Load an extension
+          ]
+```
+
+- Instalar o hook no git
+    - pre-commit install
+
+- Testar o hook manualmente (opcional)
+    - pre-commit run pylint --all-files
+
+
+## Criando Tabela através de um SQL Script
+
+```
+    CREATE TABLE `bdyoutube`.`Vendas` (
+        `idVendas` INT NOT NULL AUTO_INCREMENT,
+        `nome_produto` VARCHAR(100) NULL,
+        `valor` INT NOT NULL,
+        PRIMARY KEY (`idVendas`)
+    );
+```
+

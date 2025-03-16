@@ -135,8 +135,42 @@ def consumir_insumo():
 
 
 def visualizar_insumo():
-    print("visualizar_insumo")
+    if not nome_insumo.get().strip() or not lote_insumo.get().strip():
 
+        # limpar a caixa de texto
+        caixa_texto.delete("1.0", END)
+
+        # escrever mensagem de retorno na caixa de texto
+        caixa_texto.insert("1.0", "Nome ou Lote do insumo inválido!")
+
+        # finalizando a função
+        return
+    
+
+    # pesquisando pelo insumo
+    cursor.execute('''
+        SELECT * FROM Estoque
+                    WHERE Produto = ? and Lote = ?
+    ''', (nome_insumo.get(), lote_insumo.get(), ))
+
+    # retornar uma lista com várias tuplas,
+    # aonde cada tupla é um registro de insumo
+    valores_produto = cursor.fetchall()
+
+    if not valores_produto:
+        caixa_texto.delete("1.0", END)
+        caixa_texto.insert("1.0", "Produto ou Lote não encontrados no estoque!")
+        return
+
+    texto = ""
+    for id_produto, nome_produto, qtde_produto, validade_produto, lote_produto in valores_produto:
+        texto += f'----- \nProduto: {nome_produto}\nQuantidade: {qtde_produto}\nValidade: {validade_produto}\nLote: {lote_produto}\n-----\n'
+
+    # limpar caixa de texto
+    caixa_texto.delete("1.0", END)
+
+    # escrever mensagem de retorno na caixa de texto
+    caixa_texto.insert("1.0", texto)
     
     
 ######### criação da Janela ##################
