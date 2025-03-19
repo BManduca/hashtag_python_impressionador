@@ -876,3 +876,116 @@ e-mails.
     );
 ```
 
+
+## SQLAchemy
+- É uma biblioteca poderosa para Python que facilita a interação com banco de dados Relacionais, como MySQL, PostgreSQL, SQLite, entre outros. Ele é muito usada no desenvolvimento de aplicações web, APIs e sistemas que precisam armazenar e manipular dados em bancos SQL
+
+    - ### Principais características do SQLAlchemy
+        1. ORM (Object Relational Mapper)
+            - Permite mapear tabelas do banco de dados como classes Python. Assim, você trabalha com objetos em vez de escrever SQL puro.
+
+            Exemplo:
+            ```
+                class User(Base):
+                __tablename__ = 'users'
+                id = Column(Integer, primary_key=True)
+                name = Column(String)
+            ```
+
+        2. SQL Expression Language
+            - Além do ORM, o SQLAlchemy permite escrever SQL de forma programática, usando Python, com total controle sobre as queries.
+
+        3. Abstração do Banco de Dados
+            - Você pode trocar o banco de dados (ex.: de SQLite para PostgreSQL) sem precisar reescrever o código de interação com o banco, bastando mudar a string de conexão.
+
+        4. Gerenciamento de Sessões
+            - Trabalha com um sistema de sessões para manter o controle sobre as transações e as conexões abertas com o banco
+            
+        ***
+
+        - ### Exemplo básico de uso
+        ```
+            from sqlachemy import create_engine, Column, Integer, String
+            from sqlachemy.ext.declarative import declarative_base
+            from sqlachemy.orm import sessionmaker
+
+            # Conexão com o banco
+            engine = create_engine('sqlite:///meubanco.db')
+            base = declarative_base()
+
+            # Definindo uma tabela como classe
+            class User(Base):
+                __tablename__ = 'users'
+                id = Column(Integer, primary_key=True)
+                name = Column(String)
+
+            # Criar as tabelas
+            Base.metadata.create_all(engine)
+
+            # Criar a sessão
+            Session = sessionmaker(bing=engine)
+            session = Session()
+
+            # Inserir um novo usuário
+            novo_usuario = User(name='Brunno')
+            session.add(novo_usuario)
+            session.commit()
+        ```
+
+    
+    - ### ⚙️ Para que serve na prática?
+        * Facilitar o CRUD (Create, Read, Update, Delete) com menos código e mais segurança.
+        * Evitar SQL Injection.
+        * Trabalhar de forma mais intuitiva com dados complexos, relacionamentos (um-para-muitos, muitos-para-muitos).
+        * Integrar com frameworks como Flask e FastAPI.
+
+
+## Automação Web (Web-Scraping com Selenium)
+- **O que é Web-Scraping**
+    - É um processo/técnica de automatizar tarefas dentro do navegador(sites acessados)
+    - Esse processo pode ser utilizado para fazer raspagem de dados, ou seja, percorrer um ou mais páginas para coletar informações, como também, é possível enviar informações, como um processo diário de preencher formulários.
+
+- **Selenium**
+    - Biblioteca que permite a conexão com o navegador. 
+
+    - **Instalação**
+        - pip3 install --upgrade selenium
+
+
+    * Obs.: Para uma questão de compatibilidade todos os testes e aplicações aqui foram utilizados no Chrome
+
+    - Instalando Chrome (MacOS)
+        - 1. Acessar: https://www.google.com/chrome/
+        - 2. Efetuar download do navegador
+        - 3. Abrir o arquivo .dmg
+        - 4. Arrastar o chorme para pasta Applications
+
+    - Instalando o ChromeDriver (MacOS)
+        1. Verificar a versão do Chrome que está sendo utilizado
+            1. Acessar **Configurações do chrome**
+            2. Acessar **Sobre o Google Chrome**
+            3. Verificar a versão do Chrome como a imagem a seguir
+            ![](./assets/configuracoes_chrome_versao.png)
+        2. Acessar [página download ChromeDriver](https://googlechromelabs.github.io/chrome-for-testing/#stable)
+        3. Baixar a versão compatível com o seu Chrome
+        4. Extrarir o arquivo e mover para o diretório aonde esteja instalando o python em sua máquina
+            1. Para verificar, basta acessar terminal e efetuar seguinte comando:
+                * ``` whereis python3 ```
+            2. retorno será algo como: **/usr/local/bin/**
+        5. Após, esste passo a passo, o seu ChromeDriver estará instalado.
+
+    - Alternativa instalação e gerenciamento do ChromeDriver
+        - Essa alterantiva é chamada de webdriver-manager, que é uma outra biblioteca que faz o gerenciamento do seu chromedriver. Nesse caso, é necessário instalar o webdriver-manager
+
+        - Instalação: pip3 install webdriver-manager
+        - Em seguida, so importar o ChromeDriverManager e usar no Serviço do nosso Selenium, da seguinte forma:
+            ```
+                from selenium import webdriver
+                from selenium.webdriver.chrome.service import Service
+                from webdriver_manager.chrome import ChromeDriveManager
+
+                servico = Service(ChromeDriverManager().install())
+                navegador = webdriver.Chrome(service=servico)
+            ```
+
+

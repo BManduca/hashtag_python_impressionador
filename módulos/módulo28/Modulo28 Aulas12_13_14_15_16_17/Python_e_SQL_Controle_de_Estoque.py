@@ -9,6 +9,7 @@ dados_conexao = (
     "Driver={SQLite3 ODBC Driver};"
     "Server=localhost;"
     "Database=Estoque.db;"
+    # "unicode_results=True;"
 )
 
 conexao = pyodbc.connect(dados_conexao)
