@@ -988,4 +988,51 @@ e-mails.
                 navegador = webdriver.Chrome(service=servico)
             ```
 
+    - Selecionando o local de uma página local de maneira dinâmica
+        - Podemos realizar esse processo atráves da biblioteca **os**
+            ```
+                import os
+                
+                caminho = os.getcwd()                
+            ```
+            - Desta forma, conseguimos armazenar o caminho do diretorio aonde está os arquivos que estáo sendo utilizados no momento.
+
+    - Encontrando um elemento ou vários elementos dentro da página:
+        ```
+            # find_element vai retornar como resposta um único elemento da página
+            navegador.find_element
+
+            # o find_elements retorna uma lista com várioas itens da sua página
+            navegador.find_elements
+        ```
+
+        - Principais atributos que podem ser utilizados para localizar elementos na página, através da classe By:
+            1. ID
+            2. NAME
+            3. XPATH
+                * É um tipo de código que vai te mostrar quem é o elemento na página
+
+    - Selecionando várioas elementos de uma vez, mas aplicando ação em um item específico
+
+        ```
+            import os
+            from selenium import webdriver
+            from selenium.webdriver.common.by import By
+
+            navegador = webdriver.Chrome()
+
+            caminho = os.getcwd()
+            arquivo = caminho + "/Pagina Hashtag.html"
+            # abrindo aquivo HTML presente no caminho especificado em arquivo
+            navegador.get(rf"file:///{arquivo}")
+
+            # criando uma lista com os os 'nav-links' encontrados
+            list_navlink_elements = navegador.find_elements(By.CLASS_NAME, 'nav-link')
+
+            for elemento in list_navlink_elements:
+                if "blog" in elemento.text.lower():
+                    elemento.click()
+                    break # finalizar o loop, para evitar problema ou erros na execução
+        ```
+
 
