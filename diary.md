@@ -1012,7 +1012,7 @@ e-mails.
             3. XPATH
                 * É um tipo de código que vai te mostrar quem é o elemento na página
 
-    - Selecionando várioas elementos de uma vez, mas aplicando ação em um item específico
+    - Selecionando vários elementos de uma vez, mas aplicando ação em um item específico
 
         ```
             import os
@@ -1036,3 +1036,6 @@ e-mails.
         ```
 
 
+    - ActionChains
+        * É uma classe que permite criar e executar uma sequência de ações avançadas do usuário, como cliques duplos, arrastar e soltar, mover o cursor, pressionar teclas modificadoras (Shift, Ctrl, Alt) e interações com menus suspensos
+        * Ele é útil quando operações simples como click() ou send_keys() não são suficientes. Com o ActionChains, você pode encadear várias ações e executá-las de uma só vez.
