@@ -1039,3 +1039,26 @@ e-mails.
     - ActionChains
         * É uma classe que permite criar e executar uma sequência de ações avançadas do usuário, como cliques duplos, arrastar e soltar, mover o cursor, pressionar teclas modificadoras (Shift, Ctrl, Alt) e interações com menus suspensos
         * Ele é útil quando operações simples como click() ou send_keys() não são suficientes. Com o ActionChains, você pode encadear várias ações e executá-las de uma só vez.
+
+
+    - Biblioteca urllib
+        * Biblioteca nativa do Python
+        * Trabaljha com URLs
+        * Faz requisições HTTP simples (como GET, POST...)
+        * Faz o parse (quebrar/analisar) de URLs
+        * Baixar conteúdos da web (como imagens, arquivos, etc.)
+
+    
+## Biblioteca tqdm (taqaddum => "progresso")
+* Uma biblioteca Python que serve para mostrar barras de progresso elegantes no terminal ou no Jupyter notebook.
+* **Porque utilizar?**
+    * Quando está em um loop com várias tarefas demoradas, como envio de mensagens WhatsApp Web, é interessante saber quanto já foi feito e quanto falta. É ai que o tqdm brilha :)
+* Instalação
+    * **pip3 install tqdm**
+* Exemplo
+![](./módulos/módulo29/Modulo29_aula32_Desafio_Automatizando_Envio_de_Mensagens_do_Whatsapp/assets/verificacao_progresso_uso_tqdm.png)
+
+* Linha de código
+    ```
+    for linha in tqdm(tabela.index, desc="📤 Enviando mensagens"):
+    ```
