@@ -859,11 +859,16 @@ e-mails.
 ```
 
 - Instalar o hook no git
-    - pre-commit install
+    * pre-commit install
+    &nbsp;
 
 - Testar o hook manualmente (opcional)
-    - pre-commit run pylint --all-files
+    * pre-commit run pylint --all-files
+    &nbsp;
 
+- Enviar Commit sem a verificação
+    * commit -m "message" --no-verify
+    &nbsp;
 
 ## Criando Tabela através de um SQL Script
 
@@ -1062,3 +1067,26 @@ e-mails.
     ```
     for linha in tqdm(tabela.index, desc="📤 Enviando mensagens"):
     ```
+
+## Web-Sraping com BeautifulSoup BS4
+* BeautifulSoup é uma ferramenta de Web-Scraping
+* Intuito de percorrer páginas em HTML, para extrair informações, **no limite** até modificar informações
+* **Vantagens e Desvantagens com relação ao Selenium**
+    * Vantagem:
+        - É muito mais fácil de ligar/configurar suas propriedades
+        - É mais rápido
+
+    * Desvantagem:
+        - So consegue trabalhar com páginas estáticas, com informações estáticas
+
+    * ### Funcionamento do BeautifulSoup
+        * O BeautifulSoup faz uma requisição na página
+        * Essa página devolve pro BS uma resposta (código HTML que está por trás da página)
+        * Armazena esse código dentro de uma variável no Python e apartir desse momento, não existe mais uma **conexão** com o site em si
+
+* Biblioteca requests
+    - biblioteca para fazer as requisições no site, ou seja, 'puxar' as informações do site
+    - Os sites conseguem 'saber' que está sendo utilizado uma ferramenta para fazer essas requisições, neste caso, ferramenta para Web-scraping(raspagem de dados)
+        - **Obs.:** Alguns sites não permitem isso
+        - **Ex.:** Site da Amazon
+        
