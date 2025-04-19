@@ -1,0 +1,102 @@
+{
+    "Bitcoin": {
+        "moeda": "Bitcoin",
+        "codigo": "BTC",
+        "preço": "$84,704.00",
+        "variação_1h": "0.05%",
+        "variação_24h": "1.35%",
+        "variação_7d": "7.41%",
+        "marketcap": "$1,682,533,575,646",
+        "volume_24hrs": "$35,202,161,364"
+    },
+    "Ethereum": {
+        "moeda": "Ethereum",
+        "codigo": "ETH",
+        "preço": "$1,628.83",
+        "variação_1h": "-0.05%",
+        "variação_24h": "2.53%",
+        "variação_7d": "4.69%",
+        "marketcap": "$196,789,800,925",
+        "volume_24hrs": "$16,728,196,540"
+    },
+    "Tether": {
+        "moeda": "Tether",
+        "codigo": "USDT",
+        "preço": "$0.9998",
+        "variação_1h": "-0.01%",
+        "variação_24h": "0.01%",
+        "variação_7d": "0.04%",
+        "marketcap": "$144,335,284,741",
+        "volume_24hrs": "$67,570,206,644"
+    },
+    "XRP": {
+        "moeda": "XRP",
+        "codigo": "XRP",
+        "preço": "$2.13",
+        "variação_1h": "-0.39%",
+        "variação_24h": "1.12%",
+        "variação_7d": "11.93%",
+        "marketcap": "$124,642,913,403",
+        "volume_24hrs": "$3,464,946,371"
+    },
+    "BNB": {
+        "moeda": "BNB",
+        "codigo": "BNB",
+        "preço": "$586.17",
+        "variação_1h": "-0.04%",
+        "variação_24h": "0.56%",
+        "variação_7d": "5.37%",
+        "marketcap": "$83,538,727,741",
+        "volume_24hrs": "$1,364,183,948"
+    },
+    "Solana": {
+        "moeda": "Solana",
+        "codigo": "SOL",
+        "preço": "$129.64",
+        "variação_1h": "-0.15%",
+        "variação_24h": "2.26%",
+        "variação_7d": "21.19%",
+        "marketcap": "$66,908,454,704",
+        "volume_24hrs": "$4,598,058,723"
+    },
+    "USDC": {
+        "moeda": "USDC",
+        "codigo": "USDC",
+        "preço": "$0.9999",
+        "variação_1h": "-0.00%",
+        "variação_24h": "-0.00%",
+        "variação_7d": "-0.01%",
+        "marketcap": "$60,209,555,812",
+        "volume_24hrs": "$11,563,728,553"
+    },
+    "TRON": {
+        "moeda": "TRON",
+        "codigo": "TRX",
+        "preço": "$0.2519",
+        "variação_1h": "0.05%",
+        "variação_24h": "-0.23%",
+        "variação_7d": "10.44%",
+        "marketcap": "$23,926,633,838",
+        "volume_24hrs": "$740,663,262"
+    },
+    "Dogecoin": {
+        "moeda": "Dogecoin",
+        "codigo": "DOGE",
+        "preço": "$0.1587",
+        "variação_1h": "0.01%",
+        "variação_24h": "-2.46%",
+        "variação_7d": "6.76%",
+        "marketcap": "$23,627,282,087",
+        "volume_24hrs": "$996,301,824"
+    },
+    "Cardano": {
+        "moeda": "Cardano",
+        "codigo": "ADA",
+        "preço": "$0.6354",
+        "variação_1h": "0.07%",
+        "variação_24h": "-0.29%",
+        "variação_7d": "8.96%",
+        "marketcap": "$22,419,902,936",
+        "volume_24hrs": "$728,268,106"
+    }
+}
