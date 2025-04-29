@@ -1089,4 +1089,18 @@ e-mails.
     - Os sites conseguem 'saber' que está sendo utilizado uma ferramenta para fazer essas requisições, neste caso, ferramenta para Web-scraping(raspagem de dados)
         - **Obs.:** Alguns sites não permitem isso
         - **Ex.:** Site da Amazon
-        
+
+## Automação ERP 
+
+Formas de integrar o Python com sistemas ERP:
+1. Integrar por meio de banco de dados
+    * Python com SQL
+    * Na prática, não é o mais viável, a não ser que a pessoa seja o adm ou a pessoa da TI responsável por está parte, controlando o banco de dados, para que não ocorra nenhum tipo de problema, essa questão não estará disponível.
+2. Automação via desktop
+    * Simular o usuário usando o próprio computador, para automatizar o processo.
+    * Ferramentas: 
+        * Selenium
+        * Pyautogui
+3. Bibliotecas
+    1. pyautogui -> permite a realização de automações
+    2. pillow e opencv-python -> permitem fazer o reconhecimento de imagens
